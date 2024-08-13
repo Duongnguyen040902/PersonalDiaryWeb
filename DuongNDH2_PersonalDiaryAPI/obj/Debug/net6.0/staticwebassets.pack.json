@@ -1,0 +1,553 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\Avatar_default.jpg",
+      "PackagePath": "staticwebassets\\images\\Avatar_default.jpg"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\Kin_Paint_Logo_Blue.png",
+      "PackagePath": "staticwebassets\\images\\Kin_Paint_Logo_Blue.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\MyAvatar.jpg",
+      "PackagePath": "staticwebassets\\images\\MyAvatar.jpg"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\add-friends.png",
+      "PackagePath": "staticwebassets\\images\\add-friends.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\advertisement.png",
+      "PackagePath": "staticwebassets\\images\\advertisement.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\arrow.png",
+      "PackagePath": "staticwebassets\\images\\arrow.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\comments.png",
+      "PackagePath": "staticwebassets\\images\\comments.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\cover.png",
+      "PackagePath": "staticwebassets\\images\\cover.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\display.png",
+      "PackagePath": "staticwebassets\\images\\display.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\feed-image-1.png",
+      "PackagePath": "staticwebassets\\images\\feed-image-1.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\feed-image-2.png",
+      "PackagePath": "staticwebassets\\images\\feed-image-2.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\feed-image-3.png",
+      "PackagePath": "staticwebassets\\images\\feed-image-3.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\feed-image-4.png",
+      "PackagePath": "staticwebassets\\images\\feed-image-4.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\feed-image-5.png",
+      "PackagePath": "staticwebassets\\images\\feed-image-5.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\feedback.png",
+      "PackagePath": "staticwebassets\\images\\feedback.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\feeling.png",
+      "PackagePath": "staticwebassets\\images\\feeling.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\friends.png",
+      "PackagePath": "staticwebassets\\images\\friends.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\group.png",
+      "PackagePath": "staticwebassets\\images\\group.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\help.png",
+      "PackagePath": "staticwebassets\\images\\help.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\inbox.png",
+      "PackagePath": "staticwebassets\\images\\inbox.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\kinpaint-white_logo-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\kinpaint-white_logo-removebg-preview.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\like-blue.png",
+      "PackagePath": "staticwebassets\\images\\like-blue.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\like.png",
+      "PackagePath": "staticwebassets\\images\\like.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\live-video.png",
+      "PackagePath": "staticwebassets\\images\\live-video.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\location.png",
+      "PackagePath": "staticwebassets\\images\\location.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\logo2.png",
+      "PackagePath": "staticwebassets\\images\\logo2.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\logout.png",
+      "PackagePath": "staticwebassets\\images\\logout.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\marketplace.png",
+      "PackagePath": "staticwebassets\\images\\marketplace.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\member-1.png",
+      "PackagePath": "staticwebassets\\images\\member-1.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\member-2.png",
+      "PackagePath": "staticwebassets\\images\\member-2.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\member-3.png",
+      "PackagePath": "staticwebassets\\images\\member-3.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\member-4.png",
+      "PackagePath": "staticwebassets\\images\\member-4.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\member-5.png",
+      "PackagePath": "staticwebassets\\images\\member-5.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\member-6.png",
+      "PackagePath": "staticwebassets\\images\\member-6.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\member-7.png",
+      "PackagePath": "staticwebassets\\images\\member-7.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\member-8.png",
+      "PackagePath": "staticwebassets\\images\\member-8.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\member-9.png",
+      "PackagePath": "staticwebassets\\images\\member-9.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\message.png",
+      "PackagePath": "staticwebassets\\images\\message.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\more.png",
+      "PackagePath": "staticwebassets\\images\\more.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\news.png",
+      "PackagePath": "staticwebassets\\images\\news.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\notification.png",
+      "PackagePath": "staticwebassets\\images\\notification.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\photo.png",
+      "PackagePath": "staticwebassets\\images\\photo.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\photo1.png",
+      "PackagePath": "staticwebassets\\images\\photo1.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\photo2.png",
+      "PackagePath": "staticwebassets\\images\\photo2.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\photo3.png",
+      "PackagePath": "staticwebassets\\images\\photo3.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\photo4.png",
+      "PackagePath": "staticwebassets\\images\\photo4.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\photo5.png",
+      "PackagePath": "staticwebassets\\images\\photo5.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\photo6.png",
+      "PackagePath": "staticwebassets\\images\\photo6.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\profile-home.png",
+      "PackagePath": "staticwebassets\\images\\profile-home.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\profile-job.png",
+      "PackagePath": "staticwebassets\\images\\profile-job.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\profile-location.png",
+      "PackagePath": "staticwebassets\\images\\profile-location.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\profile-pic.png",
+      "PackagePath": "staticwebassets\\images\\profile-pic.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\profile-study.png",
+      "PackagePath": "staticwebassets\\images\\profile-study.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\profile.png",
+      "PackagePath": "staticwebassets\\images\\profile.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\search.png",
+      "PackagePath": "staticwebassets\\images\\search.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\see-more.png",
+      "PackagePath": "staticwebassets\\images\\see-more.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\setting.png",
+      "PackagePath": "staticwebassets\\images\\setting.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\share.png",
+      "PackagePath": "staticwebassets\\images\\share.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\shortcut-1.png",
+      "PackagePath": "staticwebassets\\images\\shortcut-1.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\shortcut-2.png",
+      "PackagePath": "staticwebassets\\images\\shortcut-2.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\shortcut-3.png",
+      "PackagePath": "staticwebassets\\images\\shortcut-3.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\shortcut-4.png",
+      "PackagePath": "staticwebassets\\images\\shortcut-4.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\status-1.png",
+      "PackagePath": "staticwebassets\\images\\status-1.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\status-2.png",
+      "PackagePath": "staticwebassets\\images\\status-2.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\status-3.png",
+      "PackagePath": "staticwebassets\\images\\status-3.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\status-4.png",
+      "PackagePath": "staticwebassets\\images\\status-4.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\status-5.png",
+      "PackagePath": "staticwebassets\\images\\status-5.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\upload.png",
+      "PackagePath": "staticwebassets\\images\\upload.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\video.png",
+      "PackagePath": "staticwebassets\\images\\video.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\images\\watch.png",
+      "PackagePath": "staticwebassets\\images\\watch.png"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\js\\function.js",
+      "PackagePath": "staticwebassets\\js\\function.js"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\ChuyenNganhKy8_SE1708\\PRN231\\Project\\Project_PRN321_NguyenDinhHaiDuong\\DuongNDH2_PersonalDiaryAPI\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.DuongNDH2_PersonalDiaryAPI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.DuongNDH2_PersonalDiaryAPI.props",
+      "PackagePath": "build\\DuongNDH2_PersonalDiaryAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.DuongNDH2_PersonalDiaryAPI.props",
+      "PackagePath": "buildMultiTargeting\\DuongNDH2_PersonalDiaryAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.DuongNDH2_PersonalDiaryAPI.props",
+      "PackagePath": "buildTransitive\\DuongNDH2_PersonalDiaryAPI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

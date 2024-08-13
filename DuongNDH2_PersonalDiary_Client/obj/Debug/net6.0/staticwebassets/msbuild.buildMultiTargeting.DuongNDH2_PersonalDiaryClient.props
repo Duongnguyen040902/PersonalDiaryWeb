@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\DuongNDH2_PersonalDiaryClient.props" />
+</Project>

@@ -1,0 +1,184 @@
+﻿@model DuongNDH2_PersonalDiary_Client.Models.Dto.RegisterRequest
+
+@{
+    ViewData["Title"] = "Register";
+    Layout = null;
+}
+<head>
+	<style>
+		.logo-container {
+			background-color: #007bff; /* Màu nền xanh nước biển */
+			text-align: center;
+			margin-top: 50px;
+			margin-bottom: 70px; /* Khoảng cách giữa logo và phần account-wall */
+		}
+
+		.logo {
+			width: 120px; /* Kích thước của logo */
+			height: auto; /* Đảm bảo tỷ lệ hình ảnh */
+		}
+
+		.form-signin {
+			max-width: 330px;
+			padding: 15px;
+			margin: 0 auto;
+		}
+
+			.form-signin .form-signin-heading, .form-signin .checkbox {
+				margin-bottom: 10px;
+			}
+
+			.form-signin .checkbox {
+				font-weight: normal;
+			}
+
+			.form-signin .form-control {
+				position: relative;
+				font-size: 16px;
+				height: auto;
+				padding: 10px;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+
+				.form-signin .form-control:focus {
+					z-index: 2;
+				}
+
+			.form-signin input[type="text"] {
+				margin-bottom: -1px;
+				border-bottom-left-radius: 0;
+				border-bottom-right-radius: 0;
+			}
+
+			.form-signin input[type="password"] {
+				margin-bottom: 10px;
+				border-top-left-radius: 0;
+				border-top-right-radius: 0;
+			}
+
+		.account-wall {
+			margin-top: 20px;
+			padding: 40px 0px 20px 0px;
+			background-color: #f7f7f7;
+			-moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+			-webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+			box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+		}
+
+		.login-title {
+			color: #555;
+			font-size: 18px;
+			font-weight: 400;
+			display: block;
+		}
+
+		.profile-img {
+			width: 96px;
+			height: 96px;
+			margin: 0 auto 10px;
+			display: block;
+			-moz-border-radius: 50%;
+			-webkit-border-radius: 50%;
+			border-radius: 50%;
+		}
+
+		.need-help {
+			margin-top: 10px;
+		}
+
+		.new-account {
+			display: block;
+			margin-top: 10px;
+		}
+
+		footer#footer {
+			text-align: center;
+			background: var(--nav-color);
+			color: var(--bg-color);
+			padding: 15px 0px;
+			font-size: 13px;
+		}
+	</style>
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!------ Include the above in your HEAD tag ---------->
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+</head>
+
+<div class="container">
+	<!-- Thẻ <img> thay thế cho <h1> -->
+	<div class="logo-container">
+		<img src="~/images/logo.png" alt="Logo" class="logo">
+	</div>
+	<hr>
+
+
+	<div class="row justify-content-center">
+		<div class="col-md-6">
+			<div class="card">
+				<header class="card-header">
+					<h4 class="card-title mt-2">Sign up</h4>
+				</header>
+				<article class="card-body">
+					<form asp-action="Register" method="post" class="mx-1 mx-md-4">
+						<div class="form-row">
+							<div class="col form-group">
+								<label asp-for="UserName" class="form-label">User Name</label>
+								<input asp-for="UserName" class="form-control" placeholder="Name"/>
+								<span asp-validation-for="UserName" class="text-danger"></span>
+							</div> <!-- form-group end.// -->
+						</div> <!-- form-row end.// -->
+						<div class="form-group">
+							<label asp-for="Email" class="form-label">Email address</label>
+							<input asp-for="Email" class="form-control" />							
+							<span asp-validation-for="Email" class="text-danger"></span>
+							<small class="form-text text-muted">We'll never share your email with anyone else.</small>
+						</div> <!-- form-group end.// -->
+						<div class="form-group">
+							<label class="form-check form-check-inline">
+								<input asp-for="Gender" type="radio" class="form-check-input" value="0">
+								<span class="form-check-label"> Male </span>
+							</label>
+							<label class="form-check form-check-inline">
+								<input asp-for="Gender" type="radio" class="form-check-input" value="1">
+								<span class="form-check-label"> Female</span>
+							</label>
+							<label class="form-check form-check-inline">
+								<input asp-for="Gender" type="radio" class="form-check-input" value="2">
+								<span class="form-check-label"> Other</span>
+							</label>
+							<span asp-validation-for="Gender" class="text-danger"></span>
+						</div> <!-- form-group end.// -->
+						<div class="form-row">
+							<div class="col form-group">
+							<label asp-for="DateOfBirth" class="form-label">Date of birth</label>
+							<input asp-for="DateOfBirth" type="date" class="form-control" />	    
+							<span asp-validation-for="DateOfBirth" class="text-danger"></span>
+							</div> <!-- form-group end.// -->
+						</div> <!-- form-row.// -->
+						<div class="form-group">
+							<label asp-for="Password" class="form-label">Create password</label>
+							<input asp-for="Password" type="password" class="form-control" />							
+							<span asp-validation-for="Password" class="text-danger"></span>
+						</div> <!-- form-group end.// -->
+						<div class="form-group">
+							<button type="submit" class="btn btn-primary btn-block"> Register  </button>
+						</div> <!-- form-group// -->
+						<small class="text-muted">By clicking the 'Sign Up' button, you confirm that you accept our <br> Terms of use and Privacy Policy.</small>
+					</form>
+				</article> <!-- card-body end .// -->
+				<div class="border-top card-body text-center">Have an account? <a asp-controller="User" asp-action="Login">Log In</a></div>
+			</div> <!-- card.// -->
+		</div> <!-- col.//-->
+
+	</div> <!-- row.//-->
+</div>
+<!--container end.//-->
+
+<footer id="footer">
+	<p>Socialbook All Rights Reserved</p>
+</footer>

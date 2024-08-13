@@ -1,0 +1,132 @@
+﻿@model DuongNDH2_PersonalDiary_Client.Models.Dto.LoginRequest
+
+@{
+    ViewData["Title"] = "Đăng nhập";
+    Layout = null;
+}
+<head>
+    <style>
+        .logo-container {
+            background-color: #007bff; /* Màu nền xanh nước biển */
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 70px; /* Khoảng cách giữa logo và phần account-wall */
+        }
+
+        .logo {
+            width: 120px; /* Kích thước của logo */
+            height: auto; /* Đảm bảo tỷ lệ hình ảnh */
+        }
+        .form-signin {
+            max-width: 330px;
+            padding: 15px;
+            margin: 0 auto;
+        }
+
+            .form-signin .form-signin-heading, .form-signin .checkbox {
+                margin-bottom: 10px;
+            }
+
+            .form-signin .checkbox {
+                font-weight: normal;
+            }
+
+            .form-signin .form-control {
+                position: relative;
+                font-size: 16px;
+                height: auto;
+                padding: 10px;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+
+                .form-signin .form-control:focus {
+                    z-index: 2;
+                }
+
+            .form-signin input[type="text"] {
+                margin-bottom: -1px;
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+
+            .form-signin input[type="password"] {
+                margin-bottom: 10px;
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
+            }
+
+        .account-wall {
+            margin-top: 20px;
+            padding: 40px 0px 20px 0px;
+            background-color: #f7f7f7;
+            -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+            -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .login-title {
+            color: #555;
+            font-size: 18px;
+            font-weight: 400;
+            display: block;
+        }
+
+        .profile-img {
+            width: 96px;
+            height: 96px;
+            margin: 0 auto 10px;
+            display: block;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
+        }
+
+        .need-help {
+            margin-top: 10px;
+        }
+
+        .new-account {
+            display: block;
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 col-md-4 col-md-offset-4">
+            <!-- Thẻ <img> thay thế cho <h1> -->
+            <div class="logo-container">
+                <img src="~/images/logo.png" alt="Logo" class="logo">
+            </div>
+            <div class="account-wall">
+                <img class="profile-img" src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=120"
+                     alt="">
+                <form class="form-signin" asp-action="Login" method="post">
+                    <label class="form-label" for="typeEmailX">Email</label>
+                    <input asp-for="Email" id="typeEmailX" class="form-control form-control-lg" autofocus />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                    <label class="form-label" for="typePasswordX">Password</label>
+                    <input asp-for="Password" id="typePasswordX" class="form-control form-control-lg" type="password" />
+                    <span asp-validation-for="Password" class="text-danger"></span>               
+                    <button class="btn btn-lg btn-primary btn-block" type="submit">
+                        Sign in
+                    </button>
+                    <label class="checkbox pull-left">
+                        <input type="checkbox" value="remember-me">
+                        Remember me
+                    </label>
+                    <a href="#" class="pull-right need-help">Need help? </a><span class="clearfix"></span>
+                </form>
+            </div>
+            <a asp-controller="User" asp-action="Register" class="text-center new-account">Create an account </a>
+        </div>
+    </div>
+</div>

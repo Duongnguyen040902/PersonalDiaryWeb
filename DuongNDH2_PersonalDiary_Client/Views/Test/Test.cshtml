@@ -1,0 +1,43 @@
+﻿<script>
+    document.getElementById('postButton').addEventListener('click', async () => {
+        const content = document.getElementById('postContent').value;
+        const userId = @Model.User.UserId;
+        const isPublic = document.getElementById('postStatus').value === 'true';
+
+        const postData = {
+            Content: content,
+            CreatedAt: new Date().toISOString(),
+            UserId: userId,
+            IsPublic: isPublic
+        };
+
+        try {
+            const response = await fetch('https://localhost:7062/api/Posts', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${token}`
+                },
+                body: JSON.stringify(postData)
+            });
+
+            if (response.status === 401) {
+                alert('You need to be logged in to perform this action!');
+                window.location.href = 'https://localhost:7149/User/Login';
+            } else if (response.ok) {
+                alert('Post created successfully!');
+                location.reload(); // Refresh the page to show the new post
+            } else {
+                const errorText = await response.text(); // Get the error response body
+                console.error('Failed to create post:', errorText); // Log the error for debugging
+            }
+        } catch (error) {
+            console.error('An error occurred:', error);
+            alert('An unexpected error occurred.');
+        }
+    });
+</script>
+
+
+
+

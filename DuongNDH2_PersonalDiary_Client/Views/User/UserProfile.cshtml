@@ -1,0 +1,409 @@
+﻿@model DuongNDH2_PersonalDiary_Client.Models.ViewModel.IndexViewModel
+@{
+    ViewData["Title"] = "Edit Post";
+    Layout = "_Layout";
+    var userId = Context.Session.GetInt32("UserId");
+}
+
+<div class="profile-container">
+    <img src="images/cover.png" class="coverImage" alt="">
+    <div class="dashboard">
+        <div class="left-dashboard">
+            <img src="@Model.User.ProfilePictureUrl" class="dashboard-img" alt="">
+            <div class="left-dashboard-info">
+                <h3>@Model.User.UserName</h3>
+            </div>
+        </div>
+        <div class="right-dashboard-info">
+        </div>
+    </div>
+
+
+    <div class="container content-profile-container">
+        <div class="left-sidebar profile-left-sidebar">
+            <div class="left-profile-sidebar-top">
+                <div class="intro-bio">
+                    <h4>intro</h4>
+                    <p>Belive in yourself and you do unbelievable things <i class="far fa-smile-beam"></i></p>
+                    <hr>
+                </div>
+                <div class="background-details">
+                    <a href="#">
+                        <i class="far fa-envelope"></i>
+                        <p>@Model.User.Email</p>
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-graduation-cap"></i>
+                        <p>@Model.User.Gender</p>
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-user-graduate"></i>
+                        <p>@Model.User.DateOfBirth.ToString("MMMM dd yyyy")</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- main-content------- -->
+
+        <div class="content-area profile-content-area">
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="@Model.User.ProfilePictureUrl" alt="">
+                    <div>
+                        <p>@Model.User.UserName</p>
+                        <select id="postStatus">
+                            <option value="true">Public</option>
+                            <option value="false">Private</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="post-upload-textarea">
+                    <textarea id="postContent" placeholder="What's on your mind?" cols="30" rows="3"></textarea>
+                    <input type="file" id="postPhotos" multiple accept="image/*">
+                    <button id="postButton">Post</button>
+                </div>
+            </div>
+
+            @foreach (var post in Model.Posts)
+            {
+                <div class="status-field-container write-post-container">
+                    <div class="user-profile-box">
+                        <div class="user-profile">
+                            <img src="@post.User.ProfilePictureUrl" alt="">
+                            <div>
+                                <p>@post.User.UserName</p>
+                                <small>@post.CreatedAt.ToString("MMMM dd yyyy, hh:mm tt")</small>
+                                <div>
+                                    <small>@post.StatusPost</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            @if (post.StatusPost == "Public")
+                            {
+                                <button onclick="toggleStatus(@post.PostId, 'Public')">Public</button>
+                            }
+                            else
+                            {
+                                <button onclick="toggleStatus(@post.PostId, 'Private')">Private</button>
+                            }
+                            <i class="fas fa-ellipsis-v" onclick="toggleEditRemoveButtons(@post.PostId)"></i>
+                        </div>
+                        <div id="edit-remove-buttons-@post.PostId" style="display:none;">
+                            <button type="button" onclick="location.href='@Url.Action("EditPost", "EditPost", new { postId = post.PostId, origin = "UserProfile" })'">Edit</button>
+                            <button onclick="deletePost(@Model.User.UserId, @post.PostId)">Remove</button>
+                        </div>
+                    </div>
+                    <div class="status-field">
+                        <p>
+                            @post.Content
+                        </p>
+                        @foreach (var photo in post.Photos)
+                        {
+                            <img src="/@photo" alt="Post Photo" style="max-width: 280px;" />
+                        }
+                    </div>
+                    <div class="post-reaction">
+                        <div class="activity-icons">
+                            <div>
+                                <!-- Like/Unlike Button -->
+                                @if (post.IsLikedByCurrentUser)
+                                {
+                                    <img onclick="unlikePost(@Model.User.UserId, @post.PostId)" src="/images/like-blue.png">
+                                }
+                                else
+                                {
+                                    <img onclick="likePost(@Model.User.UserId, @post.PostId)" src="/images/like.png">
+                                }
+                                @post.NumberOfPostLikes
+                            </div>
+                            <!-- Comments Section -->
+                            <div>
+                                <img src="/images/comments.png" alt="Comments" onclick="toggleComments(@post.PostId)"> <span id="comments-count-@post.PostId">@post.NumberOfComments</span>
+                            </div>
+                            <div id="comments-container-@post.PostId" style="display:none;">
+                                <!-- Comment List -->
+                                <div id="comments-list-@post.PostId" style="display:block;">
+                                    @* Comments will be dynamically loaded here *@
+                                </div>
+                                <!-- Add Comment Form -->
+                                <div class="add-comment">
+                                    <textarea id="commentContent-@post.PostId" placeholder="Write a comment..."
+                                              style="margin-right: 30px; margin-top:30px; resize:none;" cols="50" rows="3"></textarea>
+                                    <button onclick="addComment(@Model.User.UserId, @post.PostId)">Comment</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+@section Scripts {
+    <script>
+        const token = '@Context.Session.GetString("Token")';
+        console.log(token);
+        document.getElementById('postButton').addEventListener('click', async () => {
+            const content = document.getElementById('postContent').value;
+            const photos = document.getElementById('postPhotos').files;
+            const userId = @Model.User.UserId;
+            const isPublic = document.getElementById('postStatus').value === 'true';
+
+            const formData = new FormData();
+            formData.append('Content', content);
+            formData.append('CreatedAt', new Date().toISOString());
+            formData.append('UserId', userId);
+            formData.append('IsPublic', isPublic);
+
+            for (let i = 0; i < photos.length; i++) {
+                formData.append('PhotoUrls', photos[i]);
+            }
+
+            try {
+                const response = await fetch('https://localhost:7062/api/Posts', {
+                    method: 'POST',
+                    headers: {
+                        'Authorization': `Bearer ${token}`
+                    },
+                    body: formData
+                });
+                if (response.status === 401) {
+                    alert('You need to be logged in to perform this action!');
+                    window.location.href = 'https://localhost:7149/User/Login'
+                }
+                else if (response.ok) {
+                    alert('Post created successfully!');
+                    location.reload(); // Refresh the page to show the new post
+                } else {
+                    const errorText = await response.text(); // Get the error response body
+                    console.error('Failed to create post:', errorText); // Log the error for debugging
+                }
+            } catch (error) {
+                console.error('An error occurred:', error);
+                alert('An unexpected error occurred.');
+            }
+        });
+
+        async function likePost(userId, postId) {
+            try {
+                const response = await fetch(`https://localhost:7062/api/PostLikes/${userId}/${postId}`, {
+                    method: 'POST',
+                    headers: {
+                        'Authorization': `Bearer ${token}`
+                    },
+                });
+                if (response.status === 401) {
+                    alert('You need to be logged in to perform this action!');
+                    window.location.href = 'https://localhost:7149/User/Login'
+                }
+                else if (response.ok) {
+                    location.reload(); // Example: Refresh the page to reflect changes
+                } else {
+                    const errorText = await response.text();
+                    console.error('Failed to like post:', errorText);
+                }
+            } catch (error) {
+                console.error('An error occurred:', error);
+                alert('An unexpected error occurred.');
+            }
+        }
+
+        async function unlikePost(userId, postId) {
+            try {
+                const response = await fetch(`https://localhost:7062/api/PostLikes/${userId}/${postId}`, {
+                    method: 'DELETE',
+                    headers: {
+                        'Authorization': `Bearer ${token}`
+                    },
+                });
+                if (response.status === 401) {
+                    alert('You need to be logged in to perform this action!');
+                    window.location.href = 'https://localhost:7149/User/Login'
+                }
+                else if (response.ok) {
+                    location.reload(); // Example: Refresh the page to reflect changes
+                } else {
+                    const errorText = await response.text();
+                    console.error('Failed to unlike post:', errorText);
+                }
+            } catch (error) {
+                console.error('An error occurred:', error);
+                alert('An unexpected error occurred.');
+            }
+        }
+
+        async function toggleComments(postId) {
+            const commentsContainer = document.getElementById(`comments-container-${postId}`);
+            if (commentsContainer.style.display === 'none') {
+                commentsContainer.style.display = 'block';
+                await loadComments(postId);
+            } else {
+                commentsContainer.style.display = 'none';
+            }
+        }
+
+        async function loadComments(postId) {
+            const commentsList = document.getElementById(`comments-list-${postId}`);
+            commentsList.innerHTML = ''; // Clear current comments
+
+            try {
+                const response = await fetch(`https://localhost:7062/api/Comments/post/${postId}`);
+                if (response.ok) {
+                    const data = await response.json();
+                    if (data.$values && Array.isArray(data.$values)) {
+                        data.$values.forEach(comment => {
+                            const commentDiv = document.createElement('div');
+                            commentDiv.classList.add('comment');
+
+                            commentDiv.innerHTML = `
+                                                    <div style = "display: block; margin-top: 20px; margin-right: 100px;">
+                                                        <div class="user-profile" style = "display: flex;">
+                                                            <img src="${comment.user.profilePictureUrl}" alt="User Image">
+                                                            <p><strong>${comment.user.userName}</strong></p>
+                                                        </div>
+                                                        <small>${new Date(comment.createdAt).toLocaleString()}</small>
+                                                        <p>${comment.content}</p>
+                                                    </div>
+                                                    <div>
+                                                            ${comment.user.userId === @Model.User.UserId ? `<button onclick="deleteComment(${comment.commentId}, ${comment.user.userId}, ${postId})">Delete</button>` : ''}
+                                                    </div>
+                                                `;
+
+                            commentsList.appendChild(commentDiv);
+                        });
+                    } else {
+                        console.error('Unexpected response format:', data);
+                        alert('Failed to load comments. Unexpected response format.');
+                    }
+                } else {
+                    const errorText = await response.text();
+                    console.error('Failed to load comments:', errorText);
+                    alert('Failed to load comments. Details: ' + errorText);
+                }
+            } catch (error) {
+                console.error('An error occurred:', error);
+                alert('An unexpected error occurred.');
+            }
+        }
+
+
+        async function addComment(userId, postId) {
+            const content = document.getElementById(`commentContent-${postId}`).value;
+
+            if (!content) {
+                alert('Comment content cannot be empty');
+                return;
+            }
+
+            try {
+                const response = await fetch(`https://localhost:7062/api/Comments/${postId}/${userId}`, {
+                    method: 'POST',
+                    headers: {
+                        'Authorization': `Bearer ${token}`,
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(content)
+                });
+                if (response.status === 401) {
+                    alert('You need to be logged in to perform this action!');
+                    window.location.href = 'https://localhost:7149/User/Login'
+                }
+                else if (response.ok) {
+                    document.getElementById(`commentContent-${postId}`).value = ''; // Clear textarea
+                    await loadComments(postId); // Reload comments
+
+                    // Tăng số lượng comment
+                    const commentCountElement = document.querySelector(`#comments-count-${postId}`);
+                    commentCountElement.innerText = parseInt(commentCountElement.innerText) + 1;
+                } else {
+                    const errorText = await response.text();
+                    console.error('Failed to add comment:', errorText);
+                }
+            } catch (error) {
+                console.error('An error occurred:', error);
+                alert('An unexpected error occurred.');
+            }
+        }
+
+        async function deleteComment(commentId, userId, postId) {
+            try {
+                const response = await fetch(`https://localhost:7062/api/Comments/${commentId}/${userId}`, {
+                    method: 'DELETE',
+                    headers: {
+                        'Authorization': `Bearer ${token}`
+                    },
+                });
+                if (response.status === 401) {
+                    alert('You need to be logged in to perform this action!');
+                    window.location.href = 'https://localhost:7149/User/Login'
+                }
+                else if (response.ok) {
+                    alert('Comment deleted successfully!');
+                    await loadComments(postId); // Reload comments
+
+                    // Giảm số lượng comment
+                    const commentCountElement = document.querySelector(`#comments-count-${postId}`);
+                    commentCountElement.innerText = parseInt(commentCountElement.innerText) - 1;
+                } else {
+                    const errorText = await response.text();
+                    console.error('Failed to delete comment:', errorText);
+                }
+            } catch (error) {
+                console.error('An error occurred:', error);
+                alert('An unexpected error occurred.');
+            }
+        }
+
+        function toggleEditRemoveButtons(postId) {
+            const buttonsDiv = document.getElementById(`edit-remove-buttons-${postId}`);
+            if (buttonsDiv.style.display === 'none' || buttonsDiv.style.display === '') {
+                buttonsDiv.style.display = 'block';
+            } else {
+                buttonsDiv.style.display = 'none';
+            }
+        }
+
+        async function deletePost(userId, postId) {
+            try {
+                const response = await fetch(`https://localhost:7062/api/Posts/${postId}/${userId}`, {
+                    method: 'DELETE',
+                });
+
+                if (response.ok) {
+                    alert('Post deleted successfully!');
+                    location.reload(); // Refresh the page to show updated posts
+                } else {
+                    const errorText = await response.text();
+                    console.error('Failed to delete post:', errorText);
+                    alert('Failed to delete post. Details: ' + errorText);
+                }
+            } catch (error) {
+                console.error('An error occurred:', error);
+                alert('An unexpected error occurred.');
+            }
+        }
+        async function toggleStatus(postId, currentStatus) {
+            const newStatus = currentStatus === 'Public' ? 'statusPrivate' : 'statusPublic';
+            const url = `https://localhost:7062/api/Posts/${newStatus}/${postId}`;
+
+            try {
+                const response = await fetch(url, {
+                    method: 'PUT',
+                });
+
+                if (response.ok) {
+                    location.reload();
+
+                } else {
+                    alert('Failed1 to update status');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Failed3 to update status');
+            }
+        }
+    </script>
+}
